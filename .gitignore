@@ -7,9 +7,9 @@
       
       /* if ((Status = Single))
         {
-          int amount1 = tax <= 9,225
-          int amount2 = tax <= 37,450
-             
+          int amount1 = tax >= 9,225
+          int amount2 = tax >= 37,450
+          int amount3 = tax >=   
            
           
            
