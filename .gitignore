@@ -7,10 +7,15 @@
       
       /* if ((Status = Single))
         {
-          int amount1 = tax >= 9,225
-          int amount2 = tax >= 37,450
-          int amount3 = tax >=   
-           
+          int amount1 = tax >= 9,225   // 0 to 9,225
+          int amount2 = tax >= || <= 37,450   // 10%: $9,225 to $37,450
+          int amount3 = tax >= || <= 90,750   // 15%: $37,450 to $$90,750 
+          int amount4 = tax >= || <= 189,300  // 25%: $90,750 to $189,300
+          int amount5 = tax >= || <= 411,500  // 28%: $189,300 to $411,500 
+          int amount6 = tax >= || <= 413,200  // 35%: $411,500 to $413,200
+          int amount7 = tax <= 413,200 
+          
+          System.out.println() 
           
            
           
