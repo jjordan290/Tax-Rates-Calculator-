@@ -1,12 +1,73 @@
-*.class
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+ public void run()
+    {
+      String Status = readLine("Enter the filing status: "); 
+      int tax = readInt("Enter the taxable income: ");
+      
+      // float sum = () 
+      
+      /* if ((Status = Single))
+        {
+          int amount1 = readInt()
+             
+           
+          
+           
+          
+          System.out.println();
+            
+        } 
+      
+        if((Status = MarriedFilingJointly)) 
+        {
+          
+           
+           
+           
+           System.out.println();
+          
+        } 
+      
+        if ((Status = MarriedFilingSeperately)) 
+        {
+         
+         
+         
+        } 
+        
+      
+        if ((Status = headOfHousehold))
+         {
+          
+          
+          
+         }
+           
+        System.out.println("Your tax is: " + sum ); 
+      
+        
+        
+        private void single(); 
+        {
+          
+          
+        }
+      
+        private void marriedFilingJointly()
+          {
+          
+          
+          }
+      
+        private void marriedFilingSeperately()
+          {
+      
+      
+          
+          }
+      
+      private void headOfHousehold()
+        {
+          
+          
+        }
+     */ 
