@@ -1,15 +1,15 @@
  public void run()
     {
       String Status = readLine("Enter the filing status: "); 
-      int tax = readInt("Enter the taxable income: ");
+      double tax = readDouble("Enter the taxable income: ");
       
       // float sum = () 
       
       /* if ((Status = Single))
         {
-          int amount = (tax * 0.5 + 15)
+          int singleamount = (tax *  - 37,450)
           
-          System.out.println("Your tax is " + amount) 
+          System.out.println("Your tax is " + singleamount) 
           
            
           
@@ -19,11 +19,8 @@
       
         if((Status = MarriedFilingJointly)) 
         {
-          
-           
-           
-           
-           System.out.println();
+        
+        System.out.println();
           
         } 
       
