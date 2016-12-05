@@ -7,7 +7,7 @@
       
       /* if ((Status = Single))
         {
-          int singleamount = (tax *  - 37,450)
+          int singleamount = (tax / 37,450)
           
           System.out.println("Your tax is " + singleamount) 
           
