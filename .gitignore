@@ -1,76 +1,138 @@
  public void run()
     {
-      String Status = readLine("Enter the filing status: "); 
-      double tax = readDouble("Enter the taxable income: ");
+     String UserInput = readLine("Enter the filing status: Single-- Married-- MarriedSeperate-- Household? "); 
+        System.out.println(UserInput);
+        double income = readInt("Enter the taxable income: ");
+        double tax;
       
-      // float sum = () 
-      
-      /* if ((Status = Single))
-        {
-          int singleamount = (tax / 37,450)
-          
-          System.out.println("Your tax is " + singleamount) 
-          
-           
-          
-          System.out.println();
-            
-        } 
-      
-        if((Status = MarriedFilingJointly)) 
-        {
+        // Single Tax Income
         
-        System.out.println();
-          
-        } 
-      
-        if ((Status = MarriedFilingSeperately)) 
+        if (income < 9225)
         {
-         
-         
-         
-        } 
-        
-      
-        if ((Status = headOfHousehold))
-         {
-          
+          tax = (income * 0.10 / income); // multiply income by 10%
           
           
          }
+        else if (income > 9225.0)
+        {
+          tax = (income * 0.10);
+          
+        }
+      
+      if (income < 37450)
+       {
+          tax = (income * 0.15); // multiplies income by 15%
+          
+       }
+       else if (income > 37450)
+        {
+         tax = (income * 0.15);
+          
+        }
+       if (income < 90750)
+       {
+         tax = (income * 0.20); // multiplies income by 20%
+         
+       }
+       else if (income > 90750);
+       {
+         tax = (income * 0.20);
+         
+       }
+    
+     if (income < 189300)
+       {
+           tax = (income * 0.25); // multiplies income by 25%
+        ;
+       }
+    
+    else if (income > 189300)
+    {
+        tax = (income * 0.25);
+         
+    }
+    
+    if (income < 411500)
+    {
+      tax = (income * 0.30); // multiplies tax by 30%
+      
+    }
+    
+    else if (income > 411500)
+    {
+       tax = (income * 0.30);
+       
+    }
+    
+    if (income < 413200)
+    {
+        tax = (income * 0.35);
+       
+    }
+    else if (income > 413200)
+    {
+        tax = (income * 0.35);
+        
+    }
+
+    
+     // MarriedFilingJointly Tax Income
+      
+        if (income <= 9225 && income <= 18450) // tax is greater than 9225 or 18450
+         {
+          tax = (income * 0.10);
+          
+         } 
+     
+      else if (income > 9225 && income > 18450)
+        {
+          tax = (income * 0.10); 
            
-        System.out.println("Your tax is: " + sum ); 
-      
+        }
         
-        
-        private void single(); 
+        if (income < 18451 && income < 74900) 
         {
-          int singleamount1 = tax >= 9,225  // 0 to 9,225
-          int singleamount2 = tax >= 37,450 // 10%: $9,225 to $37,450
-          int singleamount3  =tax >= 90,750 // 15%: $37,450 to $$90,750 
-          int singleamount4 = tax >= 189,300 // 25%: $90,750 to $189,300
-          int singleamount5 = tax >= 411,500 // 28%: $189,300 to $411,500 
-          int singleamount6 = tax >= 413,200 // 35%: $411,500 to $413,200
-          int singleamount7 = tax >= 413,200 //
-          
+         tax = (income * 0.15);
+         
+        } 
+        
+        else if (income > 18451 && income > 74900)
+        {
+            tax = (income * 0.15);
         }
       
-        private void marriedFilingJointly()
-          {
-          
-          
-          }
-      
-        private void marriedFilingSeperately()
-          {
-      
-      
-          
-          }
-      
-      private void headOfHousehold()
+       
+        if (income < 74901 && income < 151200)
+         {
+           tax = (income * 0.20);
+         }
+       
+        else if (income > 74901 && income > 151200)
         {
-          
-          
+          tax = (income * 0.20);   
         }
-     */ 
+        
+        if (income < 151200 && income < 230450)
+         {
+           tax = (income * 0.25);
+         }
+       
+        else if (income > 151200 && income > 230450)
+         {
+          tax = (income * 0.25);
+         }
+        
+       if (income < 230451 && income < 411500)
+        {
+          tax = (income * 0.30); 
+        }
+        
+        else if (income > 230451 && income > 411500)
+         {
+             tax = (income * 0.30);
+         }
+        
+         System.out.println("Your sales tax is " + tax )
+    
+    }
+    
